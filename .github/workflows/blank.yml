@@ -35,10 +35,10 @@ jobs:
         run: python3 ./src/train.py
         # Replace with your build command
       - name: TEST  
-        run: python3 ./tests/test_classification_project.py
+        run: python3 ./test_classification_project.py
 
       - name: Build
-        run: python3 main.py
+        run: python3 ./main.py
       
       - name: Upload Build Log
         uses: actions/upload-artifact@v2
