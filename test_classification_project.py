@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 from src.data_preparation import load_cifar10_data
 from src.model import create_cnn_model
-from src.train import train_model
+from train import train_model
 from src.predict import predict_image
 
 @pytest.fixture
