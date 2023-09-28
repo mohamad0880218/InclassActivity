@@ -30,10 +30,7 @@ jobs:
 
       - name: Install Dependencies
         run: pip install tensorflow numpy pytest
-      - name: Free Code Coverage
-        # You may pin to the exact commit or the version.
-        # uses: SamuelCabralCruz/free-code-coverage@fea8c03ebd93dc72639609023779817b02328c8f
-        uses: SamuelCabralCruz/free-code-coverage@v0.0.13
+   
 
       - name: Train
         run: python3 ./src/train.py
