@@ -36,9 +36,7 @@ jobs:
         run: python3 train.py
         # Replace with your build command
  
-      - name: Install dependencies
-        run: 
-          pip install tensorflow numpy pytest
+  
         
       - name: Test with pytest
         run: |
