@@ -29,19 +29,18 @@ jobs:
           python-version: 3.x
 
       - name: Install Dependencies
-        run: pip install tensorflow numpy 
+        run: pip install tensorflow numpy pytest
+      - name: Free Code Coverage
+        # You may pin to the exact commit or the version.
+        # uses: SamuelCabralCruz/free-code-coverage@fea8c03ebd93dc72639609023779817b02328c8f
+        uses: SamuelCabralCruz/free-code-coverage@v0.0.13
 
       - name: Train
         run: python3 ./src/train.py
         # Replace with your build command
       - name: TEST  
         run: python3 ./test_classification_project.py
+      - name: Main
+        run: python3 main.py
 
-      - name: Build
-        run: python3 ./main.py
-      
-      - name: Upload Build Log
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-log
-          path: build.log
+
