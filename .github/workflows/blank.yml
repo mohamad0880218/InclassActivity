@@ -60,5 +60,8 @@ jobs:
       with:
         # A comma separated list of code coverage files to analyse. Also supports using glob patterns to match multiple files.
         filename: coverage/**/coverage.cobertura.xml
+    - name: Main
+      run: |
+        python3 main.py
   
    
