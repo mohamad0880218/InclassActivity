@@ -33,7 +33,12 @@ jobs:
    
 
       - name: Train
-        run: python3 train.py
+      
+        run: |
+          python3 data_preparation.py
+          python3 model.py
+          python3 predict.py
+          python3 train.py
         # Replace with your build command
  
   
