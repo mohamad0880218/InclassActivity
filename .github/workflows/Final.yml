@@ -35,9 +35,7 @@ jobs:
       - name: Train
       
         run: |
-          python3 ./src/data_preparation.py
-          python3 ./src/model.py
-          python3 ./src/predict.py
+          
           python3 train.py
         # Replace with your build command
  
